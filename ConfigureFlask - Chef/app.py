@@ -88,4 +88,7 @@ def Central():
     }
     append(now,dictionary)
 
-    return render_template('index.html', prediction_text='You are {} % satisfied positively, {} % neutrally  and {} % negatively satisfied with actions of Central Government'.format(pos,ne
+    return render_template('index.html', prediction_text='You are {} % satisfied positively, {} % neutrally  and {} % negatively satisfied with actions of Central Government'.format(pos,neu,neg),data_hn=HN,data_ip=IP)
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0',port = 5000, debug=True)
