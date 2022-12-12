@@ -331,4 +331,122 @@
 
 .ion-backspace-outline:before { content: "\f3be"; }
 
-.ion-bag:before { con
+.ion-bag:before { content: "\f110"; }
+
+.ion-battery-charging:before { content: "\f111"; }
+
+.ion-battery-empty:before { content: "\f112"; }
+
+.ion-battery-full:before { content: "\f113"; }
+
+.ion-battery-half:before { content: "\f114"; }
+
+.ion-battery-low:before { content: "\f115"; }
+
+.ion-beaker:before { content: "\f269"; }
+
+.ion-beer:before { content: "\f26a"; }
+
+.ion-bluetooth:before { content: "\f116"; }
+
+.ion-bonfire:before { content: "\f315"; }
+
+.ion-bookmark:before { content: "\f26b"; }
+
+.ion-bowtie:before { content: "\f3c0"; }
+
+.ion-briefcase:before { content: "\f26c"; }
+
+.ion-bug:before { content: "\f2be"; }
+
+.ion-calculator:before { content: "\f26d"; }
+
+.ion-calendar:before { content: "\f117"; }
+
+.ion-camera:before { content: "\f118"; }
+
+.ion-card:before { content: "\f119"; }
+
+.ion-cash:before { content: "\f316"; }
+
+.ion-chatbox:before { content: "\f11b"; }
+
+.ion-chatbox-working:before { content: "\f11a"; }
+
+.ion-chatboxes:before { content: "\f11c"; }
+
+.ion-chatbubble:before { content: "\f11e"; }
+
+.ion-chatbubble-working:before { content: "\f11d"; }
+
+.ion-chatbubbles:before { content: "\f11f"; }
+
+.ion-checkmark:before { content: "\f122"; }
+
+.ion-checkmark-circled:before { content: "\f120"; }
+
+.ion-checkmark-round:before { content: "\f121"; }
+
+.ion-chevron-down:before { content: "\f123"; }
+
+.ion-chevron-left:before { content: "\f124"; }
+
+.ion-chevron-right:before { content: "\f125"; }
+
+.ion-chevron-up:before { content: "\f126"; }
+
+.ion-clipboard:before { content: "\f127"; }
+
+.ion-clock:before { content: "\f26e"; }
+
+.ion-close:before { content: "\f12a"; }
+
+.ion-close-circled:before { content: "\f128"; }
+
+.ion-close-round:before { content: "\f129"; }
+
+.ion-closed-captioning:before { content: "\f317"; }
+
+.ion-cloud:before { content: "\f12b"; }
+
+.ion-code:before { content: "\f271"; }
+
+.ion-code-download:before { content: "\f26f"; }
+
+.ion-code-working:before { content: "\f270"; }
+
+.ion-coffee:before { content: "\f272"; }
+
+.ion-compass:before { content: "\f273"; }
+
+.ion-compose:before { content: "\f12c"; }
+
+.ion-connection-bars:before { content: "\f274"; }
+
+.ion-contrast:before { content: "\f275"; }
+
+.ion-crop:before { content: "\f3c1"; }
+
+.ion-cube:before { content: "\f318"; }
+
+.ion-disc:before { content: "\f12d"; }
+
+.ion-document:before { content: "\f12f"; }
+
+.ion-document-text:before { content: "\f12e"; }
+
+.ion-drag:before { content: "\f130"; }
+
+.ion-earth:before { content: "\f276"; }
+
+.ion-easel:before { content: "\f3c2"; }
+
+.ion-edit:before { content: "\f2bf"; }
+
+.ion-egg:before { content: "\f277"; }
+
+.ion-eject:before { content: "\f131"; }
+
+.ion-email:before { content: "\f132"; }
+
+.ion
