@@ -757,4 +757,106 @@
 
 .ion-ios-game-controller-b-outline:before { content: "\f43a"; }
 
-.ion-ios-gear:before { content: "\f43d"; 
+.ion-ios-gear:before { content: "\f43d"; }
+
+.ion-ios-gear-outline:before { content: "\f43c"; }
+
+.ion-ios-glasses:before { content: "\f43f"; }
+
+.ion-ios-glasses-outline:before { content: "\f43e"; }
+
+.ion-ios-grid-view:before { content: "\f441"; }
+
+.ion-ios-grid-view-outline:before { content: "\f440"; }
+
+.ion-ios-heart:before { content: "\f443"; }
+
+.ion-ios-heart-outline:before { content: "\f442"; }
+
+.ion-ios-help:before { content: "\f446"; }
+
+.ion-ios-help-empty:before { content: "\f444"; }
+
+.ion-ios-help-outline:before { content: "\f445"; }
+
+.ion-ios-home:before { content: "\f448"; }
+
+.ion-ios-home-outline:before { content: "\f447"; }
+
+.ion-ios-infinite:before { content: "\f44a"; }
+
+.ion-ios-infinite-outline:before { content: "\f449"; }
+
+.ion-ios-information:before { content: "\f44d"; }
+
+.ion-ios-information-empty:before { content: "\f44b"; }
+
+.ion-ios-information-outline:before { content: "\f44c"; }
+
+.ion-ios-ionic-outline:before { content: "\f44e"; }
+
+.ion-ios-keypad:before { content: "\f450"; }
+
+.ion-ios-keypad-outline:before { content: "\f44f"; }
+
+.ion-ios-lightbulb:before { content: "\f452"; }
+
+.ion-ios-lightbulb-outline:before { content: "\f451"; }
+
+.ion-ios-list:before { content: "\f454"; }
+
+.ion-ios-list-outline:before { content: "\f453"; }
+
+.ion-ios-location:before { content: "\f456"; }
+
+.ion-ios-location-outline:before { content: "\f455"; }
+
+.ion-ios-locked:before { content: "\f458"; }
+
+.ion-ios-locked-outline:before { content: "\f457"; }
+
+.ion-ios-loop:before { content: "\f45a"; }
+
+.ion-ios-loop-strong:before { content: "\f459"; }
+
+.ion-ios-medical:before { content: "\f45c"; }
+
+.ion-ios-medical-outline:before { content: "\f45b"; }
+
+.ion-ios-medkit:before { content: "\f45e"; }
+
+.ion-ios-medkit-outline:before { content: "\f45d"; }
+
+.ion-ios-mic:before { content: "\f461"; }
+
+.ion-ios-mic-off:before { content: "\f45f"; }
+
+.ion-ios-mic-outline:before { content: "\f460"; }
+
+.ion-ios-minus:before { content: "\f464"; }
+
+.ion-ios-minus-empty:before { content: "\f462"; }
+
+.ion-ios-minus-outline:before { content: "\f463"; }
+
+.ion-ios-monitor:before { content: "\f466"; }
+
+.ion-ios-monitor-outline:before { content: "\f465"; }
+
+.ion-ios-moon:before { content: "\f468"; }
+
+.ion-ios-moon-outline:before { content: "\f467"; }
+
+.ion-ios-more:before { content: "\f46a"; }
+
+.ion-ios-more-outline:before { content: "\f469"; }
+
+.ion-ios-musical-note:before { content: "\f46b"; }
+
+.ion-ios-musical-notes:before { content: "\f46c"; }
+
+.ion-ios-navigate:before { content: "\f46e"; }
+
+.ion-ios-navigate-outline:before { content: "\f46d"; }
+
+.ion-ios-nutrition:before { content: "\f470"; 
