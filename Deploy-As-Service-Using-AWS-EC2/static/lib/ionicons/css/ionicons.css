@@ -1293,4 +1293,100 @@
 
 .ion-social-foursquare:before { content: "\f34d"; }
 
-.ion-social-foursquare-outline:before { con
+.ion-social-foursquare-outline:before { content: "\f34c"; }
+
+.ion-social-freebsd-devil:before { content: "\f2c4"; }
+
+.ion-social-github:before { content: "\f233"; }
+
+.ion-social-github-outline:before { content: "\f232"; }
+
+.ion-social-google:before { content: "\f34f"; }
+
+.ion-social-google-outline:before { content: "\f34e"; }
+
+.ion-social-googleplus:before { content: "\f235"; }
+
+.ion-social-googleplus-outline:before { content: "\f234"; }
+
+.ion-social-hackernews:before { content: "\f237"; }
+
+.ion-social-hackernews-outline:before { content: "\f236"; }
+
+.ion-social-html5:before { content: "\f4e3"; }
+
+.ion-social-html5-outline:before { content: "\f4e2"; }
+
+.ion-social-instagram:before { content: "\f351"; }
+
+.ion-social-instagram-outline:before { content: "\f350"; }
+
+.ion-social-javascript:before { content: "\f4e5"; }
+
+.ion-social-javascript-outline:before { content: "\f4e4"; }
+
+.ion-social-linkedin:before { content: "\f239"; }
+
+.ion-social-linkedin-outline:before { content: "\f238"; }
+
+.ion-social-markdown:before { content: "\f4e6"; }
+
+.ion-social-nodejs:before { content: "\f4e7"; }
+
+.ion-social-octocat:before { content: "\f4e8"; }
+
+.ion-social-pinterest:before { content: "\f2b1"; }
+
+.ion-social-pinterest-outline:before { content: "\f2b0"; }
+
+.ion-social-python:before { content: "\f4e9"; }
+
+.ion-social-reddit:before { content: "\f23b"; }
+
+.ion-social-reddit-outline:before { content: "\f23a"; }
+
+.ion-social-rss:before { content: "\f23d"; }
+
+.ion-social-rss-outline:before { content: "\f23c"; }
+
+.ion-social-sass:before { content: "\f4ea"; }
+
+.ion-social-skype:before { content: "\f23f"; }
+
+.ion-social-skype-outline:before { content: "\f23e"; }
+
+.ion-social-snapchat:before { content: "\f4ec"; }
+
+.ion-social-snapchat-outline:before { content: "\f4eb"; }
+
+.ion-social-tumblr:before { content: "\f241"; }
+
+.ion-social-tumblr-outline:before { content: "\f240"; }
+
+.ion-social-tux:before { content: "\f2c5"; }
+
+.ion-social-twitch:before { content: "\f4ee"; }
+
+.ion-social-twitch-outline:before { content: "\f4ed"; }
+
+.ion-social-twitter:before { content: "\f243"; }
+
+.ion-social-twitter-outline:before { content: "\f242"; }
+
+.ion-social-usd:before { content: "\f353"; }
+
+.ion-social-usd-outline:before { content: "\f352"; }
+
+.ion-social-vimeo:before { content: "\f245"; }
+
+.ion-social-vimeo-outline:before { content: "\f244"; }
+
+.ion-social-whatsapp:before { content: "\f4f0"; }
+
+.ion-social-whatsapp-outline:before { content: "\f4ef"; }
+
+.ion-social-windows:before { content: "\f247"; }
+
+.ion-social-windows-outline:before { content: "\f246"; }
+
+.ion-social-wordpress:before { content: "\f249"; }
