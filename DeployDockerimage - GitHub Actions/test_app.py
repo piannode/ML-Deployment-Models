@@ -17,3 +17,8 @@ class Tests(unittest.TestCase):
     def test_404(self):
         '''test_404: a request for null shall return 404 NOT FOUND'''
         res = self.app.get('/null')
+        assert res.status == '404 NOT FOUND'
+
+
+if __name__ == "__main__":
+    unittest.main()
