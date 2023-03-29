@@ -69,4 +69,23 @@ docker push tharun435/myrepo:1.0
 
 <img src='Images/4.png'>
 
-<h3> Succesfully the Web app is created and a link will be generated like this. <a href='https://deploymodel.a
+<h3> Succesfully the Web app is created and a link will be generated like this. <a href='https://deploymodel.azurewebsites.net/'> https://deploymodel.azurewebsites.net/
+</a> </h3>
+
+<hr />
+
+<h3>References </h3>
+
+- <a href='https://runnable.com/docker/python/dockerize-your-flask-application'> Dokerizing Flask APP</a>
+- <a href='https://docs.microsoft.com/en-us/azure/app-service/'> Azure Documentation </a>
+
+- <a href='https://youtu.be/E1u3xzzL08k?list=PLlH6o4fAIji6FEsjFeo7gRgiwhPUkJ4ap'> Creating  Web  Apps on Azure </a>
+
+<h2> Thank You :D </h2>
+<p><i>I have used many online resources while creating the application and I would like to thank them</i> . &nbsp; Hope you found it insightful.If you have any queries you can mail me at : <b> kumartharun435@gmail.com </b>. I would love to hear feedback from you to improvise it and make it better! </p>
+
+
+
+
+
+
