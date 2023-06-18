@@ -613,4 +613,108 @@
 
 .ion-ios-calendar:before { content: "\f3f4"; }
 
-.ion-ios-calendar-outline:before { content: "
+.ion-ios-calendar-outline:before { content: "\f3f3"; }
+
+.ion-ios-camera:before { content: "\f3f6"; }
+
+.ion-ios-camera-outline:before { content: "\f3f5"; }
+
+.ion-ios-cart:before { content: "\f3f8"; }
+
+.ion-ios-cart-outline:before { content: "\f3f7"; }
+
+.ion-ios-chatboxes:before { content: "\f3fa"; }
+
+.ion-ios-chatboxes-outline:before { content: "\f3f9"; }
+
+.ion-ios-chatbubble:before { content: "\f3fc"; }
+
+.ion-ios-chatbubble-outline:before { content: "\f3fb"; }
+
+.ion-ios-checkmark:before { content: "\f3ff"; }
+
+.ion-ios-checkmark-empty:before { content: "\f3fd"; }
+
+.ion-ios-checkmark-outline:before { content: "\f3fe"; }
+
+.ion-ios-circle-filled:before { content: "\f400"; }
+
+.ion-ios-circle-outline:before { content: "\f401"; }
+
+.ion-ios-clock:before { content: "\f403"; }
+
+.ion-ios-clock-outline:before { content: "\f402"; }
+
+.ion-ios-close:before { content: "\f406"; }
+
+.ion-ios-close-empty:before { content: "\f404"; }
+
+.ion-ios-close-outline:before { content: "\f405"; }
+
+.ion-ios-cloud:before { content: "\f40c"; }
+
+.ion-ios-cloud-download:before { content: "\f408"; }
+
+.ion-ios-cloud-download-outline:before { content: "\f407"; }
+
+.ion-ios-cloud-outline:before { content: "\f409"; }
+
+.ion-ios-cloud-upload:before { content: "\f40b"; }
+
+.ion-ios-cloud-upload-outline:before { content: "\f40a"; }
+
+.ion-ios-cloudy:before { content: "\f410"; }
+
+.ion-ios-cloudy-night:before { content: "\f40e"; }
+
+.ion-ios-cloudy-night-outline:before { content: "\f40d"; }
+
+.ion-ios-cloudy-outline:before { content: "\f40f"; }
+
+.ion-ios-cog:before { content: "\f412"; }
+
+.ion-ios-cog-outline:before { content: "\f411"; }
+
+.ion-ios-color-filter:before { content: "\f414"; }
+
+.ion-ios-color-filter-outline:before { content: "\f413"; }
+
+.ion-ios-color-wand:before { content: "\f416"; }
+
+.ion-ios-color-wand-outline:before { content: "\f415"; }
+
+.ion-ios-compose:before { content: "\f418"; }
+
+.ion-ios-compose-outline:before { content: "\f417"; }
+
+.ion-ios-contact:before { content: "\f41a"; }
+
+.ion-ios-contact-outline:before { content: "\f419"; }
+
+.ion-ios-copy:before { content: "\f41c"; }
+
+.ion-ios-copy-outline:before { content: "\f41b"; }
+
+.ion-ios-crop:before { content: "\f41e"; }
+
+.ion-ios-crop-strong:before { content: "\f41d"; }
+
+.ion-ios-download:before { content: "\f420"; }
+
+.ion-ios-download-outline:before { content: "\f41f"; }
+
+.ion-ios-drag:before { content: "\f421"; }
+
+.ion-ios-email:before { content: "\f423"; }
+
+.ion-ios-email-outline:before { content: "\f422"; }
+
+.ion-ios-eye:before { content: "\f425"; }
+
+.ion-ios-eye-outline:before { content: "\f424"; }
+
+.ion-ios-fastforward:before { content: "\f427"; }
+
+.ion-ios-fastforward-outline:before { content: "\f426"; }
+
+.ion-ios-filing:before { content: 
