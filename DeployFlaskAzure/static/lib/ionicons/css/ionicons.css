@@ -1453,4 +1453,28 @@
 
 .ion-upload:before { content: "\f255"; }
 
-.ion-us
+.ion-usb:before { content: "\f2b8"; }
+
+.ion-videocamera:before { content: "\f256"; }
+
+.ion-volume-high:before { content: "\f257"; }
+
+.ion-volume-low:before { content: "\f258"; }
+
+.ion-volume-medium:before { content: "\f259"; }
+
+.ion-volume-mute:before { content: "\f25a"; }
+
+.ion-wand:before { content: "\f358"; }
+
+.ion-waterdrop:before { content: "\f25b"; }
+
+.ion-wifi:before { content: "\f25c"; }
+
+.ion-wineglass:before { content: "\f2b9"; }
+
+.ion-woman:before { content: "\f25d"; }
+
+.ion-wrench:before { content: "\f2ba"; }
+
+.ion-xbox:before { content: "\f30c"; }
