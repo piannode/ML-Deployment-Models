@@ -1797,3 +1797,116 @@
 		};
 
 		// set default options
+		this._core.options = $.extend({}, AutoRefresh.Defaults, this._core.options);
+
+		// register event handlers
+		this._core.$element.on(this._handlers);
+	};
+
+	/**
+	 * Default options.
+	 * @public
+	 */
+	AutoRefresh.Defaults = {
+		autoRefresh: true,
+		autoRefreshInterval: 500
+	};
+
+	/**
+	 * Watches the element.
+	 */
+	AutoRefresh.prototype.watch = function() {
+		if (this._interval) {
+			return;
+		}
+
+		this._visible = this._core.isVisible();
+		this._interval = window.setInterval($.proxy(this.refresh, this), this._core.settings.autoRefreshInterval);
+	};
+
+	/**
+	 * Refreshes the element.
+	 */
+	AutoRefresh.prototype.refresh = function() {
+		if (this._core.isVisible() === this._visible) {
+			return;
+		}
+
+		this._visible = !this._visible;
+
+		this._core.$element.toggleClass('owl-hidden', !this._visible);
+
+		this._visible && (this._core.invalidate('width') && this._core.refresh());
+	};
+
+	/**
+	 * Destroys the plugin.
+	 */
+	AutoRefresh.prototype.destroy = function() {
+		var handler, property;
+
+		window.clearInterval(this._interval);
+
+		for (handler in this._handlers) {
+			this._core.$element.off(handler, this._handlers[handler]);
+		}
+		for (property in Object.getOwnPropertyNames(this)) {
+			typeof this[property] != 'function' && (this[property] = null);
+		}
+	};
+
+	$.fn.owlCarousel.Constructor.Plugins.AutoRefresh = AutoRefresh;
+
+})(window.Zepto || window.jQuery, window, document);
+
+/**
+ * Lazy Plugin
+ * @version 2.3.2
+ * @author Bartosz Wojciechowski
+ * @author David Deutsch
+ * @license The MIT License (MIT)
+ */
+;(function($, window, document, undefined) {
+
+	/**
+	 * Creates the lazy plugin.
+	 * @class The Lazy Plugin
+	 * @param {Owl} carousel - The Owl Carousel
+	 */
+	var Lazy = function(carousel) {
+
+		/**
+		 * Reference to the core.
+		 * @protected
+		 * @type {Owl}
+		 */
+		this._core = carousel;
+
+		/**
+		 * Already loaded items.
+		 * @protected
+		 * @type {Array.<jQuery>}
+		 */
+		this._loaded = [];
+
+		/**
+		 * Event handlers.
+		 * @protected
+		 * @type {Object}
+		 */
+		this._handlers = {
+			'initialized.owl.carousel change.owl.carousel resized.owl.carousel': $.proxy(function(e) {
+				if (!e.namespace) {
+					return;
+				}
+
+				if (!this._core.settings || !this._core.settings.lazyLoad) {
+					return;
+				}
+
+				if ((e.property && e.property.name == 'position') || e.type == 'initialized') {
+					var settings = this._core.settings,
+						n = (settings.center && Math.ceil(settings.items / 2) || settings.items),
+						i = ((settings.center && n * -1) || 0),
+						position = (e.property && e.property.value !== undefined ? e.property.value : this._core.current()) + i,
+						clones = this._co
