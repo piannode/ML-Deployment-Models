@@ -123,4 +123,98 @@
 				else {
 					$menu
 						.on('mouseenter.superfish', targets, over)
-						.on('mouseleave.super
+						.on('mouseleave.superfish', targets, out);
+				}
+				var touchevent = 'MSPointerDown.superfish';
+				if (unprefixedPointerEvents) {
+					touchevent = 'pointerdown.superfish';
+				}
+				if (!ios) {
+					touchevent += ' touchend.superfish';
+				}
+				if (wp7) {
+					touchevent += ' mousedown.superfish';
+				}
+				$menu
+					.on('focusin.superfish', 'li', over)
+					.on('focusout.superfish', 'li', out)
+					.on(touchevent, 'a', o, touchHandler);
+			};
+
+		return {
+			// public methods
+			hide: function (instant) {
+				if (this.length) {
+					var $this = this,
+						o = getOptions($this);
+					if (!o) {
+						return this;
+					}
+					var not = (o.retainPath === true) ? o.$path : '',
+						$ul = $this.find('li.' + o.hoverClass).add(this).not(not).removeClass(o.hoverClass).children(o.popUpSelector),
+						speed = o.speedOut;
+
+					if (instant) {
+						$ul.show();
+						speed = 0;
+					}
+					o.retainPath = false;
+
+					if (o.onBeforeHide.call($ul) === false) {
+						return this;
+					}
+
+					$ul.stop(true, true).animate(o.animationOut, speed, function () {
+						var $this = $(this);
+						o.onHide.call($this);
+					});
+				}
+				return this;
+			},
+			show: function () {
+				var o = getOptions(this);
+				if (!o) {
+					return this;
+				}
+				var $this = this.addClass(o.hoverClass),
+					$ul = $this.children(o.popUpSelector);
+
+				if (o.onBeforeShow.call($ul) === false) {
+					return this;
+				}
+
+				$ul.stop(true, true).animate(o.animation, o.speed, function () {
+					o.onShow.call($ul);
+				});
+				return this;
+			},
+			destroy: function () {
+				return this.each(function () {
+					var $this = $(this),
+						o = $this.data('sfOptions'),
+						$hasPopUp;
+					if (!o) {
+						return false;
+					}
+					$hasPopUp = $this.find(o.popUpSelector).parent('li');
+					clearTimeout(o.sfTimer);
+					toggleMenuClasses($this, o);
+					toggleAnchorClass($hasPopUp);
+					toggleTouchAction($this);
+					// remove event handlers
+					$this.off('.superfish').off('.hoverIntent');
+					// clear animation's inline display style
+					$hasPopUp.children(o.popUpSelector).attr('style', function (i, style) {
+						return style.replace(/display[^;]+;?/g, '');
+					});
+					// reset 'current' path classes
+					o.$path.removeClass(o.hoverClass + ' ' + c.bcClass).addClass(o.pathClass);
+					$this.find('.' + o.hoverClass).removeClass(o.hoverClass);
+					o.onDestroy.call($this);
+					$this.removeData('sfOptions');
+				});
+			},
+			init: function (op) {
+				return this.each(function () {
+					var $this = $(this);
+					if ($this.data('sfOptions')
