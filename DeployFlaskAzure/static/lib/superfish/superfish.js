@@ -217,4 +217,60 @@
 			init: function (op) {
 				return this.each(function () {
 					var $this = $(this);
-					if ($this.data('sfOptions')
+					if ($this.data('sfOptions')) {
+						return false;
+					}
+					var o = $.extend({}, $.fn.superfish.defaults, op),
+						$hasPopUp = $this.find(o.popUpSelector).parent('li');
+					o.$path = setPathToCurrent($this, o);
+
+					$this.data('sfOptions', o);
+
+					toggleMenuClasses($this, o, true);
+					toggleAnchorClass($hasPopUp, true);
+					toggleTouchAction($this);
+					applyHandlers($this, o);
+
+					$hasPopUp.not('.' + c.bcClass).superfish('hide', true);
+
+					o.onInit.call(this);
+				});
+			}
+		};
+	})();
+
+	$.fn.superfish = function (method, args) {
+		if (methods[method]) {
+			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+		}
+		else if (typeof method === 'object' || ! method) {
+			return methods.init.apply(this, arguments);
+		}
+		else {
+			return $.error('Method ' +  method + ' does not exist on jQuery.fn.superfish');
+		}
+	};
+
+	$.fn.superfish.defaults = {
+		popUpSelector: 'ul,.sf-mega', // within menu context
+		hoverClass: 'sfHover',
+		pathClass: 'overrideThisToUse',
+		pathLevels: 1,
+		delay: 800,
+		animation: {opacity: 'show'},
+		animationOut: {opacity: 'hide'},
+		speed: 'normal',
+		speedOut: 'fast',
+		cssArrows: true,
+		disableHI: false,
+		onInit: $.noop,
+		onBeforeShow: $.noop,
+		onShow: $.noop,
+		onBeforeHide: $.noop,
+		onHide: $.noop,
+		onIdle: $.noop,
+		onDestroy: $.noop,
+		onHandleTouch: $.noop
+	};
+
+})(jQuery, window);
